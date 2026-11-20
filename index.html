@@ -1,20 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="te">
 <head>
-<title>Hiranya Landing Page</title>
-<style>
-  body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f9; padding: 50px; }
-  .box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
-  h1 { color: #333; }
-  p { color: #666; font-size: 18px; }
-  .btn { display: inline-block; padding: 12px 25px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiranya - Modern Landing Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: #f4f7fb; color: #333; line-height: 1.6; }
+
+    /* Top Navigation Bar */
+    nav {
+      background: #ffffff;
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo { font-size: 24px; font-weight: bold; color: #5b21b6; }
+    .nav-links a { text-decoration: none; color: #444; margin-left: 25px; font-weight: 500; }
+    .nav-links a:hover { color: #5b21b6; }
+
+    /* Colorful Gradient Header (Hero Section) */
+    header {
+      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+    header h1 { font-size: 44px; margin-bottom: 15px; letter-spacing: 0.5px; }
+    header p.subtitle { font-size: 20px; max-width: 650px; margin: 0 auto 30px; opacity: 0.95; }
+    .btn-primary {
+      background: #ffffff;
+      color: #6d28d9;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { transform: translateY(-3px); }
+
+    /* Feature Cards Section */
+    .container { max-width: 1100px; margin: 60px auto; padding: 0 20px; }
+    .section-title { text-align: center; font-size: 32px; color: #1e293b; margin-bottom: 10px; }
+    .section-subtitle { text-align: center; color: #64748b; margin-bottom: 40px; }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      border-top: 5px solid #8b5cf6;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-6px); }
+    .card-icon { font-size: 36px; margin-bottom: 15px; }
+    .card h3 { font-size: 22px; margin-bottom: 10px; color: #1e293b; }
+    .card p { color: #475569; font-size: 15px; }
+
+    /* Highlight Banner */
+    .cta-box {
+      background: linear-gradient(135deg, #1e293b, #334155);
+      color: white;
+      text-align: center;
+      padding: 50px 25px;
+      border-radius: 20px;
+      margin-top: 60px;
+    }
+    .cta-box h2 { font-size: 28px; margin-bottom: 12px; }
+    .cta-box p { color: #cbd5e1; margin-bottom: 25px; }
+    .btn-whatsapp {
+      background: #22c55e;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
+      background: #ffffff;
+      color: #64748b;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
 </head>
 <body>
-  <div class="box">
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">✨ Hiranya</div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Colorful Header & Subtitle -->
+  <header>
     <h1>స్వాగతం - Hiranya Landing Page</h1>
-    <p>మా కొత్త వెబ్‌సైట్‌కు మీకు స్వాగతం. ఇది GitHub ద్వారా ఉచితంగా రూపొందించబడింది.</p>
-    <a href="#" class="btn">మరిన్ని వివరాలు</a>
+    <p class="subtitle">Meeru korukunna modern design, colorful header, mariyu stylish elements tho mee kotha digital platform.</p>
+    <a href="#features" class="btn-primary">Explore Now →</a>
+  </header>
+
+  <!-- Cards Section -->
+  <div class="container" id="features">
+    <h2 class="section-title">Maa Special Features</h2>
+    <p class="section-subtitle">Mee needs ki tagga best solutions ikkada unnayi</p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>Fast & Modern</h3>
+        <p>Mobile mariyu desktop lo chala fast ga, neat ga open ayye responsive design.</p>
+      </div>
+      <div class="card" style="border-top-color: #ec4899;">
+        <div class="card-icon">🎨</div>
+        <h3>Colorful Theme</h3>
+        <p>Attractive gradient colors, clean typography, mariyu modern card layouts.</p>
+      </div>
+      <div class="card" style="border-top-color: #10b981;">
+        <div class="card-icon">💎</div>
+        <h3>Best Quality</h3>
+        <p>Mee business leda personal brand ni professional ga chupinche structure.</p>
+      </div>
+    </div>
+
+    <!-- Bottom Call to Action -->
+    <div class="cta-box" id="contact">
+      <h2>Mee Project Start Cheyadaniki Ready aa?</h2>
+      <p>Eppudaina mammalni contact cheyandi, memu meeku help chestamu.</p>
+      <a href="https://wa.me" class="btn-whatsapp">💬 WhatsApp lo Chat Cheyandi</a>
+    </div>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Hiranya. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
+
